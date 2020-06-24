@@ -30,7 +30,7 @@ function myFunction() {
 <ul id="myUL">
 <?php
 foreach($titles as $value){
-	echo "<li><a href=\"comic?c=".(array_search($value, $titles)+1)."\">".$value."</a></li>";
+	echo "<li><a href=\"comic.php?c=".(array_search($value, $titles)+1)."\">".$value."</a></li>";
 }
 ?>
 </ul>

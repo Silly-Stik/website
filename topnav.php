@@ -143,11 +143,11 @@ if (($h = fopen("{$filename}", "r")) !== FALSE)
   <a <?php if(($_SERVER["REQUEST_URI"]=="/index")||($_SERVER["REQUEST_URI"]=="/")||($_SERVER["REQUEST_URI"]=="/index.php")){
   echo "class=\"active\" ";}?>href="/">Home</a>
   <a <?php if(($_SERVER["REQUEST_URI"]=="/about.php")||($_SERVER["REQUEST_URI"]=="/about")){
-  echo "class=\"active\" ";}?>href="about">About</a>
+  echo "class=\"active\" ";}?>href="about.php">About</a>
   <a <?php if(($_SERVER["REQUEST_URI"]=="/gallery.php")||($_SERVER["REQUEST_URI"]=="/gallery")){
-  echo "class=\"active\" ";}?>href="gallery">Gallery</a>
+  echo "class=\"active\" ";}?>href="gallery.php">Gallery</a>
   <div class="search-container">
-    <form action="search">
+    <form action="search.php">
       <input type="text" placeholder="Search.." name="q">
       <button type="submit">Go!</button>
     </form>

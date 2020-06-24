@@ -28,11 +28,11 @@ He goes on crazy, yet not <i>too</i> crazy, adventures and regularly catches up 
 echo $titles[(int)$filecount - 1];
 ?>
 </h2>
-<div class="ctr"><span class="btn"><a class="ctext" href="comic?c=1">|<</a></span> <span class="btn"><?php echo "<a class=\"ctext\" href=\"comic?c=".($filecount-1)."\">Prev</a>"; ?></span> <span class="btn"><a class="ctext" href="random">Random</a></span> <span class="btn"><span class="ctext">Next</span></span> <span class="btn"><a class="ctext" href="comic?c=<?php echo $filecount; ?>">>|</a></span></div>
+<div class="ctr"><span class="btn"><a class="ctext" href="comic.php?c=1">|<</a></span> <span class="btn"><?php echo "<a class=\"ctext\" href=\"comic.php?c=".($filecount-1)."\">Prev</a>"; ?></span> <span class="btn"><a class="ctext" href="random.php">Random</a></span> <span class="btn"><span class="ctext">Next</span></span> <span class="btn"><a class="ctext" href="comic.php?c=<?php echo $filecount; ?>">>|</a></span></div>
 <img src=<?php echo "\"comics/" . $the_big_array[count($the_big_array)-1][2] . "\""; ?> width="100%" title=<?php echo "\"".$the_big_array[count($the_big_array)-1][1]."\"";?>>
-<div class="ctr"><span class="btn"><a class="ctext" href="comic?c=1">|<</a></span> <span class="btn"><?php echo "<a class=\"ctext\" href=\"comic?c=".($filecount-1)."\">Prev</a>"; ?></span> <span class="btn"><a class="ctext" href="random">Random</a></span> <span class="btn"><span class="ctext">Next</span></span> <span class="btn"><a class="ctext" href="comic?c=<?php echo $filecount; ?>">>|</a></span></div>
+<div class="ctr"><span class="btn"><a class="ctext" href="comic.php?c=1">|<</a></span> <span class="btn"><?php echo "<a class=\"ctext\" href=\"comic.php?c=".($filecount-1)."\">Prev</a>"; ?></span> <span class="btn"><a class="ctext" href="random.php">Random</a></span> <span class="btn"><span class="ctext">Next</span></span> <span class="btn"><a class="ctext" href="comic.php?c=<?php echo $filecount; ?>">>|</a></span></div>
 <p class="ctr ctext">Author/s: <?php echo $the_big_array[count($the_big_array)-1][3]; ?></p>
-<p class="ctr ctext">Permanent link to the comic: <a href=<?php echo "http://sillystik.com/comic?c=".$filecount; ?>><?php echo "sillystik.com/comic?c=".$filecount; ?></a></p>
+<p class="ctr ctext">Permanent link to the comic: <a href=<?php echo "http://sillystik.com/comic.php?c=".$filecount; ?>><?php echo "sillystik.com/comic?c=".$filecount; ?></a></p>
 <p class="ctr ctext">Link to the image: <a href=<?php echo "\"comics/" . $the_big_array[count($the_big_array)-1][2] . "\""; ?>><?php echo $the_big_array[count($the_big_array)-1][2]; ?></a></p>
 </div>
 <?php include("footer.php") ?>
