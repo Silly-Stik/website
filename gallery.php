@@ -61,7 +61,7 @@ Here you will find all of the past comics, from newest to oldest.</p>
 <?php
 foreach(array_reverse($the_big_array,true) as $com){
 	echo "<div class=\"responsive\"><div class=\"gallery\">
-  <a href=\"comic?c=".(array_search($com, $the_big_array)+1)."\">
+  <a href=\"comic.php?c=".(array_search($com, $the_big_array)+1)."\">
     <img src=\"comics/".$com[2]."\" alt=\"".$com[0]."\" width=\"600\" height=\"400\">
   </a>
   <div class=\"desc\">".$com[0]."</div>
